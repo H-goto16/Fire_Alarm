@@ -33,7 +33,7 @@ If you receive the message "A fatal error has occurred. The MD5 of the file does
 ```sh
 sudo python /home/johnz/.local/lib/python3.8/site-packages/esptool.py --chip auto --port /dev/ttyUSB0 --baud 115200 --before default_reset --no-stub --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size 4MB 0x0 factory/factory_WROOM-32.bin #MAC/Linux
 
-sudo python /home/johnz/.local/lib/python3.8/site-packages/esptool.py --chip auto --port COM# --baud 115200 --before default_reset --no-stub --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size 4MB 0x0 factory/factory_WROOM-32.bin #Windows
+esptool.py --chip auto --port COM# --baud 115200 --before default_reset --no-stub --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size 4MB 0x0 factory/factory_WROOM-32.bin #Windows
 ```
 
 #### Rewrite programs
