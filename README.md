@@ -24,8 +24,8 @@ Download esp32-20180511-v1.9.4.bin
 pip install esptool
 esptool.py --port /dev/ttyUSB0 erase_flash #MAC/Linux
 esptool.py --port COM# erase_flash #Windows
-esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x1000 esp32-20180511-v1.9.4.bin
-esptool.py --chip esp32 --port COM# write_flash -z 0x1000 esp32-20180511-v1.9.4.bin
+esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x1000 esp32-20180511-v1.9.4.bin #MAC/Linux
+esptool.py --chip esp32 --port COM# write_flash -z 0x1000 esp32-20180511-v1.9.4.bin #Windows
 ```
 
 If you receive the message "A fatal error has occurred. The MD5 of the file does not match the data in the flash!" is displayed.
@@ -53,3 +53,5 @@ When all work is complete, run it through Thony.
 ```sh
 %Run -c $EDITOR_CONTENT
 ```
+
+The sensitivity can be adjusted by turning the MQ-2 knob.
