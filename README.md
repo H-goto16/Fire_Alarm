@@ -8,12 +8,13 @@ Prepare ESP32 and MQ-2 module.
 ![image](image.jpg)
 
 ### Pin assignment
-
+```
 ESP32         MQ-2
 GND      =>   GND
 GPIO32   =>   D0
 GPIO34   =>   A0
 VIN(5V)  =>   VCC
+```
 
 ### Install
 
